@@ -1,0 +1,150 @@
+﻿body
+{
+    font-family:Arial;
+    font-size:13px;
+    color:#3f61A8;    
+}
+
+.ContentRight
+{
+    float:left;
+    clear:both;
+    width:700px;
+}
+.ContentHeader, .ContentHeaderPadded
+{
+    background-image:url('../Images/YellowTiny.jpg');
+    height:20px;
+    line-height:20px;
+    background-repeat:no-repeat;
+    background-position:bottom left;
+    font-size:18px;
+    clear:right;
+    padding-left:20px;
+    padding-top:0px;
+    color:#1f4188;        
+}
+.ContentHeaderPadded
+{
+    margin-top:20px;
+}
+
+.FormItem
+{
+	clear:both;
+	padding-top:1px;
+	padding-bottom:1px;
+}
+
+.FormLabel
+{
+	width:250px;
+	text-align:right;
+	float:left;
+	margin-top:4px;
+	padding-right:2px;
+}
+
+.FormInput
+{
+	text-align:left;
+	float:left;
+}
+
+.FormSubmit
+{
+	text-align:center;
+}
+
+.FormInputTextOnly
+{
+	text-align:left;
+	float:left;
+	margin-top:4px;
+	padding-left:2px;
+	font-weight:bold;
+}
+
+.InputTextField
+{
+	width:200px;
+	padding:2px;
+}
+
+.InputTextField
+{	
+	background-color: #fff;
+	border: solid 1px #7f9db9;
+}
+
+.ErrorMessage, .FormErrorMessage
+{
+	background-image: url(../Images/ErrorBig.jpg);
+	background-repeat:no-repeat;
+	background-position:center left;
+	width: 400px;
+    color: #f00;
+    background-color: #fff;
+    border: solid 2px #f00;
+    padding: 20px 20px 20px 80px;
+    font-weight:bold;
+	text-align:center;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+.SuccessMessage
+{
+	background-image: url(../Images/SuccessBig.jpg);
+	background-repeat:no-repeat;
+	background-position:center left;
+	width: 400px;
+    color: #0a0;
+    background-color: #fff;
+    border: solid 2px #0a0;
+    padding: 20px 20px 20px 80px;
+    font-weight:bold;
+	text-align:center;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+.WarningMessage
+{
+	background-image: url(../Images/WarningBig.jpg);
+	background-repeat:no-repeat;
+	background-position:center left;
+	width: 400px;
+    color: #960;
+    background-color: #fff;
+    border: solid 2px #960;
+    padding: 20px 20px 20px 80px;
+    font-weight:bold;
+	text-align:center;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+.InfoMessage
+{
+	background-image: url(../Images/InformationBig.jpg);
+	background-repeat:no-repeat;
+	background-position:center left;
+	width: 400px;
+    color: #33f;
+    background-color: #fff;
+    border: solid 2px #33f;
+    padding: 20px 20px 20px 80px;
+    font-weight:bold;
+	text-align:center;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
