@@ -93,26 +93,11 @@ td { vertical-align: top; }
    ========================================================================== */
 
 body {
-	background: #f16066;
-	color: #fff;
+	background-color: #f16066;
 	font-family: Georgia, Times, serif;
 	font-size: 100%;
 	line-height: 1.5;
 }
-
-
-
-
-
-/* GIT TEST */
-
-body {background: #ff00cc;
-	width: 100%;
-}
-
-
-
-
 
 
 /* ==|== media queries ======================================================
