@@ -3,3 +3,7 @@ cache-downloads
 inspector
 api
 source/inspector.html
+
+admin/expressionengine/cache/ee_version/current_version
+
+admin/.DS_Store
