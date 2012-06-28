@@ -159,7 +159,7 @@ footer a:hover { text-decoration: none; }
 
 header.centre { padding: 2em 3%; }
 
-.header-branding { margin: 0 0 2.5em; 0; }
+.header-branding { margin: 0 0 2.5em 0; }
 
 #logo { 
 float: left; 
@@ -177,19 +177,12 @@ margin: 0;
 list-style: none;
 }
 
-<<<<<<< HEAD
 #keywords li {
 font-size: 2em;
 line-height: 1.3em;
 margin: 0;
 text-transform: uppercase;
 color: #fff;
-=======
-body {
-	background: #ff00cc;
-	width: 100%;
-	font-family: 'Helvetica Neue';
->>>>>>> 7fc3defc1b86f88a251e236774df2a277122158b
 }
 
 #tagline {
