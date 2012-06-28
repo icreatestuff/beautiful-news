@@ -177,12 +177,19 @@ margin: 0;
 list-style: none;
 }
 
+<<<<<<< HEAD
 #keywords li {
 font-size: 2em;
 line-height: 1.3em;
 margin: 0;
 text-transform: uppercase;
 color: #fff;
+=======
+body {
+	background: #ff00cc;
+	width: 100%;
+	font-family: 'Helvetica Neue';
+>>>>>>> 7fc3defc1b86f88a251e236774df2a277122158b
 }
 
 #tagline {
