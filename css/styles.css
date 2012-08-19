@@ -122,6 +122,12 @@ padding: 0 3%;
 margin: 0 auto;
 } 
 
+a{
+-webkit-transition:color 0.3s linear;
+-moz-transition: color 0.3s linear;
+-o-transition: color 0.3s linear;
+transition: color 0.3s linear;
+}
 
 
 /* ==|== Top Bar ======================================================== */
@@ -237,6 +243,10 @@ text-decoration: none;
 text-transform: uppercase;
 }
 
+nav a:hover{
+color:#ffaaad;	
+}
+
 #searchbar input{
 background: #fde9ea;
 border: none; 
@@ -297,12 +307,17 @@ line-height: 1.4em;
 font-weight: normal;	
 }
 
-.full-story a{
+.full-story a {
 color: #434343;
 font-size: 1.2em;
 font-weight: normal;
 text-decoration: none;
 text-transform: uppercase;	
+}
+
+
+.full-story a:hover{
+color:#fff;
 }
 
 
