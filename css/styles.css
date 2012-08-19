@@ -234,6 +234,7 @@ nav a:visited {
 color: #fff;
 font-size: 1.25em;
 text-decoration: none;
+text-transform: uppercase;
 }
 
 #searchbar input{
@@ -246,6 +247,22 @@ border-radius: 3px;
 #searchbar input:focus {
 background: #fff;
 }
+
+#filter { 
+padding: 0.75em 0;
+}
+
+#filter li { 
+display: inline-block; 
+margin: 0 3% 0 0;
+color: #434343;
+font-size: 1.25em;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+#filter-icon {background-image:url('/beautiful-news/images/sprite.png'); width: 43px; height: 26px; background-position: 128px 0px;}
+
 
 /* ==|== Content ======================================================== */
 
