@@ -268,18 +268,46 @@ text-transform: uppercase;
 
 
 #content{
-padding-top: 100px;
-padding-bottom: 100px;
+padding-top: 50px;
+padding-bottom: 50px;
 } 
 
-.story {
-	
+.story h1 {
+color: #fff;
+font-size: 2.4em;
+line-height: 1em;
+font-weight: normal;
+text-decoration: none;
+text-transform: uppercase;	
+}
+
+.story h5 {
+color: #000;
+font-family: 'Georgia', serif;
+font-size: 0.8em;
+font-weight: normal;
+text-decoration: none;	
+}
+
+.story p{
+font-family: 'Times', 'Georgia', serif;
+color: #fff;
+font-size: 1.8em;
+line-height: 1.4em;
+font-weight: normal;	
+}
+
+.full-story a{
+color: #434343;
+font-size: 1.2em;
+font-weight: normal;
+text-decoration: none;
+text-transform: uppercase;	
 }
 
 
 .alt {
 	width: 100%;
-	background-color: #f16066;	
 	background-image: url('/beautiful-news/images/tile.png');
 	background-repeat: repeat;
 	padding: 20px 0px 20px 0px;
