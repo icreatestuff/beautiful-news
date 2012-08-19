@@ -113,10 +113,7 @@ body {
 	
 
 .centre {width: 100%; max-width: 1000px; margin: 0 auto;} 	
-background-color: #f16066;
-font-size: 100%;
-line-height: 1.5;
-}
+
 
 .centre {
 max-width: 1000px;
@@ -138,7 +135,7 @@ background-color: #434343;
 
 #connect {
 float: right;
-marign: 0;
+margin: 0;
 padding: 0;
 }
 
@@ -167,7 +164,7 @@ footer a:hover { text-decoration: none; }
 
 header.centre { padding: 2em 3%; }
 
-.header-branding { margin: 0 0 2.5em 0; }
+.header-branding { margin: 0 0 3em 0; }
 
 #logo {display: block;
 width: 368px; height: 118px;
@@ -175,24 +172,16 @@ width: 368px; height: 118px;
 
 #logo { 
 float: left; 
-width: 368px; 
-height: 118px;
-background: url('/beautiful-news/images/logo.png');
-text-indent: -9999px;
-margin: 0;
+width: 75%;
+max-width: 550px;
+display: block;
+position: relative;
 }
 
-#keywords {position: relative;
-font-family: 'helvetica', 'arial'; font-size: 2.4em; line-height: 1em; color: #fff;
-text-transform: uppercase;
-list-style: none;
+#logo img{
+width: 100%;
 }
 
-#tagline {
-font-family: 'helvetica', 'arial'; 
-font-size: 1em; 
-color: #fff;
-}
 
 #keywords {
 float: right;
@@ -202,10 +191,11 @@ list-style: none;
 }
 
 #keywords li {
-font-size: 2em;
+font-size: 3em;
 line-height: 1.3em;
 margin: 0;
 text-transform: uppercase;
+font-weight: normal;
 color: #fff;
 }
 
