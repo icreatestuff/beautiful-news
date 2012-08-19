@@ -273,6 +273,28 @@ text-transform: uppercase;
 
 #filter-icon {background-image:url('/beautiful-news/images/sprite.png'); width: 43px; height: 26px; background-position: 128px 0px;}
 
+#filter-subject {
+background-color: #434343;
+padding: 3px 10px 2px 10px; 	
+}
+
+#filter-subject a {
+text-decoration: none;
+color: #fff; 	
+}
+
+#filter-latest {
+background-color: #434343;
+padding: 3px 10px 2px 10px; 	
+}
+
+#filter-latest a {
+text-decoration: none;
+color: #fff; 	
+}
+
+
+
 
 /* ==|== Content ======================================================== */
 
