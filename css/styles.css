@@ -214,9 +214,6 @@ margin: 0 0 1em 0;
 /* ==|== Global Navigation ======================================================== */
 
 
-#global-nav{position: relative;
-float: left;}
-
 nav { 
 border-top: 1px solid #fff;
 border-bottom: 1px solid #fff;
@@ -228,6 +225,9 @@ display: inline-block;
 margin: 0 3% 0 0;
 }
 
+#stories {background-image:url('/beautiful-news/images/sprite.png'); width: 40px; height: 26px; background-position: 0px 0px;}
+#share {background-image:url('/beautiful-news/images/sprite.png'); width: 40px; height: 26px; background-position: 200px 0px;}
+#search {background-image:url('/beautiful-news/images/sprite.png'); width: 26px; height: 26px; background-position: 155px 0px;}
 
 nav a,
 nav a:visited {
@@ -236,6 +236,16 @@ font-size: 1.25em;
 text-decoration: none;
 }
 
+#searchbar input{
+background: #fde9ea;
+border: none; 
+border-radius: 3px; 
+-moz-border-radius: 3px;
+}
+
+#searchbar input:focus {
+background: #fff;
+}
 
 /* ==|== Content ======================================================== */
 
