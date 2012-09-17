@@ -368,6 +368,38 @@ color: #f16066;
 }
 
 
+/* ==|== Single Story ======================================================== */
+
+h1.story-title {
+color: #f16066;
+}
+
+.story-title { 
+background-color: #fde9ea;
+padding: 10px;	
+}
+
+
+.opening-paragraph {
+font-size: 2em;
+line-height: 1.2em;
+}
+
+.story-nav li{
+display: inline-block;
+list-style-type: none;
+text-transform: uppercase;	
+}
+
+.prev {
+	
+}
+
+.next {
+	
+}
+
+
 /* ==|== Footer ======================================================== */
 
 
