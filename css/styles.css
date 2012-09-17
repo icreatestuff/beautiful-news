@@ -379,24 +379,30 @@ background-color: #fde9ea;
 padding: 10px;	
 }
 
+.author {
+font-style: italic;	
+}
 
 .opening-paragraph {
-font-size: 2em;
+font-size: 1.8em;
 line-height: 1.2em;
+font-weight: normal;
 }
+
 
 .story-nav li{
 display: inline-block;
 list-style-type: none;
-text-transform: uppercase;	
+text-transform: uppercase;
 }
 
 .prev {
-	
+text-decoration: none;		
 }
 
 .next {
-	
+text-decoration: none;
+padding-left: 20px;		
 }
 
 
