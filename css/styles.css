@@ -254,6 +254,7 @@ border-radius: 3px;
 -moz-border-radius: 3px;
 }
 
+
 #searchbar input:focus {
 background: #fff;
 }
@@ -438,7 +439,7 @@ border: 1px solid white;
 }
 
 form {
-overflow: hidden;	
+overflow: hidden;
 }
 
 form label {
@@ -475,11 +476,6 @@ top: -9999px !important;
 left: -9999px !important;	
 }
 
-
-#story {
-width: 900px;	
-}
-
 form button {
 background-color: #434343;
 padding: 5px 10px; 
@@ -493,6 +489,12 @@ form fieldset input:focus,
 form fieldset textarea:focus {
 background: #fff;
 }
+
+
+#story {
+width: 900px;	
+}
+
    
 
 /* ==|== Footer ======================================================== */
