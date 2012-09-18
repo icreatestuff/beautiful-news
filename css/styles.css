@@ -455,8 +455,14 @@ form input, textarea {
 border-radius: 3px;	
 }
 
+.hide-label {
+position: absolute !important;
+top: -9999px !important;
+left: -9999px !important;	
+}
+
 #story {
-width: 500px;	
+width: 900px;	
 }
 
 form button {
