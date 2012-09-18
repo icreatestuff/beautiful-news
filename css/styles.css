@@ -446,10 +446,16 @@ display: block;
 color: #ffffff;	
 }
 
-form fieldset {
+form fieldset, input, textarea {
 float: left;
 margin-right: 50px;
-margin-bottom: 20px;	
+margin-bottom: 10px;
+border: 0px;
+border-radius: 3px;		
+}
+
+form input {
+height: 30px;
 }
 
 .checkbox {
@@ -463,16 +469,12 @@ padding-right: 20px;
 }
 
 
-
-form input, textarea {
-border-radius: 3px;	
-}
-
 .hide-label {
 position: absolute !important;
 top: -9999px !important;
 left: -9999px !important;	
 }
+
 
 #story {
 width: 900px;	
@@ -487,35 +489,9 @@ text-transform: uppercase;
 }
 
 
-/*=========*/
-
-
-
-#contact-form fieldset label {
-font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Glegoo', 'courier', sans-serif; 
-color: #272121;
-display: block; 
-}
-
-#contact-form legend {
-color: #555555; 
-text-transform: none; 
-font-weight: normal; 
-}
-
-#contact-form fieldset input,
-#contact-form fieldset textarea {
-width: 100%;
-border: none; 
-border-bottom: 1px solid #e0e0e0; 
-border-right: 1px solid #e0e0e0; 
-background: #dfdfdf url(form-input.gif) repeat-x top left; 
-border-radius: 5px; 
-}
-
-#contact-form fieldset input:focus,
-#contact-form fieldset textarea:focus {
-background: #eeeeee;
+form fieldset input:focus,
+form fieldset textarea:focus {
+background: #fff;
 }
    
 
