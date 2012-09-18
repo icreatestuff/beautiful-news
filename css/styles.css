@@ -431,8 +431,74 @@ font-weight: normal;
 #share-background h1 {
 text-transform: uppercase;
 font-weight: normal;	
-
 }
+
+#more-details{
+border: 1px solid white;	
+}
+
+form {
+overflow: hidden;	
+}
+
+form label {
+display: block;
+color: #ffffff;	
+}
+
+form fieldset {
+float: left;
+margin-right: 50px;	
+}
+
+form input, textarea {
+border-radius: 3px;	
+}
+
+#story {
+width: 500px;	
+}
+
+form button {
+background-color: #434343;
+padding: 5px 10px; 
+border: none; 
+color: #ffffff;	
+text-transform: uppercase;
+}
+
+
+/*=========*/
+
+
+
+#contact-form fieldset label {
+font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Glegoo', 'courier', sans-serif; 
+color: #272121;
+display: block; 
+}
+
+#contact-form legend {
+color: #555555; 
+text-transform: none; 
+font-weight: normal; 
+}
+
+#contact-form fieldset input,
+#contact-form fieldset textarea {
+width: 100%;
+border: none; 
+border-bottom: 1px solid #e0e0e0; 
+border-right: 1px solid #e0e0e0; 
+background: #dfdfdf url(form-input.gif) repeat-x top left; 
+border-radius: 5px; 
+}
+
+#contact-form fieldset input:focus,
+#contact-form fieldset textarea:focus {
+background: #eeeeee;
+}
+   
 
 /* ==|== Footer ======================================================== */
 
