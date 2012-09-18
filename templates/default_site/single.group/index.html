@@ -9,8 +9,13 @@
 		<h5>Posted on {entry_date format="%d/%m/%Y"} by <span class="author">{name}</span></h5>
 		
 		<ul class="story-nav">
-			<li><a class="prev" href="">&#60; Previous</a></li>
-			<li><a class="next" href="">Next &#62;</a></li>
+			{exp:channel:prev_entry}
+			<li><a class="prev" href="{path='single'}">&#60; Previous</a></li>
+			{/exp:channel:prev_entry}
+			<!-- | -->
+			{exp:channel:next_entry}
+			<li><a class="next" href="{path='single'}">Next &#62;</a></li>
+			{/exp:channel:next_entry}
 		</ul>
 	
 
@@ -32,8 +37,13 @@ Alderaan? I'm not going to Alderaan. I've got to go home. It's late, I'm in for 
 		</ul>
 		
 		<ul class="story-nav">
-			<li><a class="prev" href="">&#60; Previous</a></li>
-			<li><a class="next" href="">Next &#62;</a></li>
+			{exp:channel:prev_entry}
+			<li><a class="prev" href="{path='single'}">&#60; Previous</a></li>
+			{/exp:channel:prev_entry}
+			<!-- | -->
+			{exp:channel:next_entry}
+			<li><a class="next" href="{path='single'}">Next &#62;</a></li>
+			{/exp:channel:next_entry}
 		</ul>
 		
 	</article>
