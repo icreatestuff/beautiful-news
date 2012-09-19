@@ -1,0 +1,67 @@
+<?php if ( ! empty($files)):?>
+<form method="post" action="<?=$form_url?>">
+	<input type="hidden" name="XID" value="<?=XID_SECURE_HASH?>" />
+	<table id="file-entries" class="freeform_table cb_toggle mainTable padTable" style="width:100%;"
+		   cellspacing='0'  cellpadding='0'  border='0'>
+		<thead>
+			<tr>
+				<th style="width:5%;  text-align:left;">#</th>
+				<th style="width:10px; text-align:right;">
+					<input type="checkbox" name="toggle_all_checkboxes" value=""/>
+				</th>
+				<th style="width:8%;  text-align:left;"><?=lang('entry_id')?></th>
+				<th style="text-align:left;"><?=lang('filename')?></th>
+				<th style="width:10%; text-align:left;"><?=lang('filesize')?></th>
+				<th style="width:35%; text-align:left;"><?=lang('upload_directory_name')?></th>
+			</tr>
+		</thead>
+
+		<tbody>
+<?php foreach($files as $file):?>
+			<?php $class = $caller->cycle('odd', 'even'); ?>
+			<tr class="<?=$class?>">
+				<td><?=$file['count']?></td>
+				<td>
+					<input	type="checkbox" name="file_ids[]"
+							id="delete_box_<?=$file['file_id']?>"
+							value="<?=$file['file_id']?>"/>
+				</td>
+				<td><?=$file['entry_id']?></td>
+				<td>
+			<?php if ( isset($file['link']) AND $file['link']) :?>
+					<a class="<?=($file['fb'] ? 'fbox' : 'new_window')?>" href="<?=$file['link']?>"><?=$file['filename']?></a>
+			<?php else:?>
+					<?=$file['filename']?> (<?=lang('cannot_find_file')?>)
+			<?php endif;?>
+				</td>
+				<td><?=$file['filesize']?></td>
+				<td><?=$uprefs['name']?></td>
+			</tr>
+<?php endforeach; ?>
+		</tbody>
+	</table>
+
+	<p><input type="submit" name="submit" class="submit" value="Delete" /></p>
+
+	<?php if ($pagination):?>
+	<div class="pagination">
+		<?=$pagination?>
+	</div>
+	<?php endif;?>
+</form>
+<script type="text/javascript">
+	jQuery(function($){
+		$('.fbox').fancybox();
+		$('.new_window').click(function(e){
+			if ($(this).attr('href'))
+			{
+				window.open($(this).attr('href'));
+			}
+			e.preventDefault();
+			return false;
+		});
+	})
+</script>
+<?php else: ?>
+	<p><?=lang('no_files_uploaded')?></p>
+<?php endif;?>

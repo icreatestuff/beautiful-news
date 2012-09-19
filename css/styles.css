@@ -254,6 +254,7 @@ border-radius: 3px;
 -moz-border-radius: 3px;
 }
 
+
 #searchbar input:focus {
 background: #fff;
 }
@@ -367,6 +368,148 @@ color: #f16066;
 	padding: 20px 0px 20px 0px;
 }
 
+#more-stories {
+margin-top: 50px;
+}
+
+#more-stories a {
+padding: 3px 10px 2px 10px; 	
+background-color: #434343;
+text-decoration: none;
+color: #fff; 	
+text-transform: uppercase;
+font-weight: normal;
+}	
+
+
+
+/* ==|== Single Story ======================================================== */
+
+h1.story-title {
+color: #f16066;
+}
+
+.story-title { 
+background-color: #fde9ea;
+padding: 10px;	
+}
+
+.author {
+font-style: italic;	
+}
+
+.opening-paragraph {
+font-size: 1.8em;
+line-height: 1.2em;
+font-weight: normal;
+}
+
+
+.story-nav li{
+display: inline-block;
+list-style-type: none;
+text-transform: uppercase;
+}
+
+.prev {
+text-decoration: none;		
+}
+
+.next {
+text-decoration: none;
+padding-left: 20px;		
+}
+
+
+/* ==|== Share Story ======================================================== */
+
+#subject-select {
+background-color: #434343;
+padding: 3px 10px 2px 10px; 	
+}
+
+
+a#subject-select {
+text-transform: uppercase;
+color: #fff; 
+text-decoration: none;
+font-weight: normal;
+}
+
+#share-background {
+	width: 100%;
+	background-image: url('/beautiful-news/images/tile.png');
+	background-repeat: repeat;
+	padding: 20px 0px 20px 0px;
+}
+
+#share-background h1 {
+text-transform: uppercase;
+font-weight: normal;	
+}
+
+#more-details{
+border: 1px solid white;	
+}
+
+form {
+overflow: hidden;
+}
+
+form label {
+display: block;
+color: #ffffff;	
+}
+
+form fieldset, input, textarea {
+float: left;
+margin-right: 50px;
+margin-bottom: 10px;
+border: 0px;
+border-radius: 3px;		
+}
+
+form input {
+height: 30px;
+}
+
+.checkbox {
+float: left;
+}
+
+.label-inline label {
+float: left;
+display: block;
+padding-right: 20px;
+}
+
+
+.hide-label {
+position: absolute !important;
+top: -9999px !important;
+left: -9999px !important;	
+}
+
+form button {
+background-color: #434343;
+padding: 5px 10px; 
+border: none; 
+color: #ffffff;	
+text-transform: uppercase;
+}
+
+
+form fieldset input:focus,
+form fieldset textarea:focus {
+background: #fff;
+}
+
+
+#story {
+width: 900px;	
+}
+
+   
 
 /* ==|== Footer ======================================================== */
 

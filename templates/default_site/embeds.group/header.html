@@ -1,6 +1,6 @@
 <div id="top-bar" class="clearfix">
 	<div class="centre">
-		<h4 id="about-link"><a href=""><span>About Us</span></a></h4>
+		<h4 id="about-link"><a href="{path='about'}"><span>About Us</span></a></h4>
 
 		<ul id="connect" class="clearfix">
 			<li>Connect:</li>
@@ -34,11 +34,11 @@
 	<nav>
 		<ul>
 			<li id="stories"></li>
-			<li><a href="">Stories</a></li>
+			<li><a href="{path='site_index'}">Stories</a></li>
 			<li id="share"></li>
-			<li><a href="">Share your story</a></li>
+			<li><a href="{path='share'}">Share your story</a></li>
 			<li id="search"></li>
-			<li><a href="">Search</a></li>
+			<li><a href="{path='search'}">Search</a></li>
 			<li id="searchbar"><form><input type="text"></form></li>
 		</ul>
 	</nav><!-- nav -->
@@ -49,7 +49,14 @@
 <ul id="filter">
 	<li id="filter-icon"></li>
 	<li>Filter Stories</li>
-	<li id="filter-subject"><a href="">Subject</a></li>
+	<li id="filter-subject"><form name="catmenu" action="">
+    <select name="selcat" onchange="location=document.catmenu.selcat.options[document.catmenu.selcat.selectedIndex].value;">
+        <option value="">Subject</option>
+        {exp:channel:categories channel="story" style="linear"}
+            <option value="{path='channel'}">{category_name}</option>
+        {/exp:channel:categories}
+    </select>
+</form></li>
 	<li id="filter-latest"><a href="">Latest</a></li>
 </ul><!--filter-->	
 
