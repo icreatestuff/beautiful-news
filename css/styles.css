@@ -368,6 +368,20 @@ color: #f16066;
 	padding: 20px 0px 20px 0px;
 }
 
+#more-stories {
+margin-top: 50px;
+}
+
+#more-stories a {
+padding: 3px 10px 2px 10px; 	
+background-color: #434343;
+text-decoration: none;
+color: #fff; 	
+text-transform: uppercase;
+font-weight: normal;
+}	
+
+
 
 /* ==|== Single Story ======================================================== */
 
