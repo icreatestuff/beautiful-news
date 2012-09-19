@@ -2,7 +2,7 @@
 {embed="embeds/header"}
 <div id="content">
 
-{exp:channel:entries channel="story" limit="20"}
+{exp:channel:entries channel="story" orderby="date" sort="desc" limit="2" paginate="bottom"}
 
 <div class="{switch="alt| "}">
 	<article class="story centre">
@@ -21,8 +21,14 @@
 		
 	</article>
 </div>
+
+{paginate}
+Page {pagination_links}
+{/paginate}
 	
 {/exp:channel:entries}
+
+
 
 <h3 id="more-stories" class="centre"><a href="">More Stories in the archive</a></h3>
 
