@@ -1,29 +1,32 @@
 {embed="embeds/head"}
 {embed="embeds/header"}
+
+<div id="share-background">
+
 <div id="content" class="centre">
 
-<h1>I want to share my Beautiful News of [ SUBJECT ]</h1>
+<h1>I want to share my Beautiful News of <a href="" id="subject-select">Select</a></h1>
 
 <form id="share-form" action="">
 
 	<fieldset>
-		<label for="name">Name</label>
-		<input id="name" type="text" required/>
+		<label for="name" class="hide-label">Name</label>
+		<input id="name" placeholder="Name" type="text" required/>
 	</fieldset>
 	
-	<fieldset>
+	<fieldset class="label-inline">
 		<label for="anon">Post anonymously</label>
-		<input id="anon" type="checkbox"/>
+		<input class="checkbox" id="anon" type="checkbox"/>
 	</fieldset>
 	
 	<fieldset>
-		<label for="story">Story</label>
-		<textarea id="story" rows=8 required></textarea>
+		<label for="story" class="hide-label">Story</label>
+		<textarea id="story" placeholder="Story" rows=20 required></textarea>
 	</fieldset>
 	
-	<fieldset>
+	<fieldset class="label-inline">
 		<label for="disclaimer">I have read the <a href="">disclaimer</a></label>
-		<input id="disclaimer" type="checkbox"/>
+		<input class="checkbox" id="disclaimer" type="checkbox"/>
 	</fieldset>
 	
 	<fieldset>
@@ -36,40 +39,46 @@
 
 <form id="more-details" action="">
 
+<label>Provide additional details to give background to your story and help us improve the site (optional)</label>
+
 	<fieldset>
-		<label for="age">Age</label>
-		<input id="age" type="text"/>
+		<label for="age" class="hide-label">Age</label>
+		<input id="age" placeholder="Age" type="text"/>
 	</fieldset>
 	
-	<fieldset>
+	<fieldset class="label-inline">
 		<label for="male">Male</label>
-		<input id="male" type="checkbox"/>
-			<label for="female">Female</label>
-			<input id="female" type="checkbox"/>
+		<input class="checkbox" id="male" type="checkbox"/>
+	</fieldset>
+	
+	<fieldset class="label-inline">
+		<label for="female">Female</label>
+		<input class="checkbox" id="female" type="checkbox"/>
 	</fieldset>
 	
 	<fieldset>
-		<label for="city">City/Town</label>
-		<input id="city" type="text"/>
+		<label for="city" class="hide-label">City/Town</label>
+		<input id="city" placeholder="City/Town" type="text"/>
 	</fieldset>
 	
 	<fieldset>
-		<label for="country">Country</label>
-		<input id="country" type="text"/>
+		<label for="country" class="hide-label">Country</label>
+		<input id="country" placeholder="Country" type="text"/>
 	</fieldset>
 	
 	<fieldset>
-		<label for="church">Church</label>
-		<input id="church" type="text"/>
+		<label for="church" class="hide-label">Church</label>
+		<input id="church" placeholder="Church" type="text"/>
 	</fieldset>
 	
 	<fieldset>
-		<label for="church-url">Church URL</label>
-		<input id="church-url" type="url"/>
+		<label for="church-url" class="hide-label">Church URL</label>
+		<input id="church-url" placeholder="Church URL" type="url"/>
 	</fieldset>
 
 </form><!--more-details-->
 
+</div><!--share-->
 </div><!--content-->
 
 

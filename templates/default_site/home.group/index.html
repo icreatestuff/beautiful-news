@@ -2,124 +2,35 @@
 {embed="embeds/header"}
 <div id="content">
 
-<div class="alt">
+{exp:channel:entries channel="story" orderby="date" sort="desc" limit="2" paginate="bottom"}
+
+<div class="{switch="alt| "}">
 	<article class="story centre">
-		<h1>Discovering The Truth</h1>
-		<h5>Posted on 09/06/2012 by Christopher Goodwin</h5>
+		<h1>{title}</h1>
+		<h5>Posted on {entry_date format="%d/%m/%Y"} by <span class="author">{name}</span></h5>
 	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>{story}</p>
 		
-		<h3 class="full-story"><a href="">Full Story</a></h3>
+		<h3 class="full-story"><a href="{title_permalink="single/index"}">Full Story</a></h3>
 		
 		<ul class="tag-list">
-			<li class="tag"><a href="">Depression</a></li>
-			<li class="tag"><a href="">Hope</a></li>
-			<li class="tag"><a href="">Addiction</a></li>
-			<li class="tag"><a href="">Healing</a></li>
+		{categories}	
+		<li class="tag"> <a href="{path='site_index'}"> {category_name} </a> </li>
+		{/categories}
 		</ul>
 		
 	</article>
 </div>
 
-<!-- ======================================================================== -->
+{paginate}
+Page {pagination_links}
+{/paginate}
+	
+{/exp:channel:entries}
 
-	<article class="story centre">
-		<h1>Discovering The Truth</h1>
-		<h5>Posted on 09/06/2012 by Christopher Goodwin</h5>
-	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-		<h3 class="full-story"><a href="">Full Story</a></h3>
-		
-		<ul class="tag-list">
-			<li class="tag"><a href="">Depression</a></li>
-			<li class="tag"><a href="">Hope</a></li>
-			<li class="tag"><a href="">Addiction</a></li>
-			<li class="tag"><a href="">Healing</a></li>
-		</ul>
-		
-	</article>
-	
-<!-- ======================================================================== -->
-	
-<div class="alt">
-	<article class="story centre">
-		<h1>Discovering The Truth</h1>
-		<h5>Posted on 09/06/2012 by Christopher Goodwin</h5>
-	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-		<h3 class="full-story"><a href="">Full Story</a></h3>
-				
-		<ul class="tag-list">
-			<li class="tag"><a href="">Depression</a></li>
-			<li class="tag"><a href="">Hope</a></li>
-			<li class="tag"><a href="">Addiction</a></li>
-			<li class="tag"><a href="">Healing</a></li>
-		</ul>
-		
-	</article>
-</div>
 
-<!-- ======================================================================== -->
-	
-	
-	<article class="story centre">
-		<h1>Discovering The Truth</h1>
-		<h5>Posted on 09/06/2012 by Christopher Goodwin</h5>
-	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-		<h3 class="full-story"><a href="">Full Story</a></h3>
-				
-		<ul class="tag-list">
-			<li class="tag"><a href="">Depression</a></li>
-			<li class="tag"><a href="">Hope</a></li>
-			<li class="tag"><a href="">Addiction</a></li>
-			<li class="tag"><a href="">Healing</a></li>
-		</ul>
-		
-	</article>
-	
-<!-- ======================================================================== -->
-	
-<div class="alt">
-	<article class="story centre">
-		<h1>Discovering The Truth</h1>
-		<h5>Posted on 09/06/2012 by Christopher Goodwin</h5>
-	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-		<h3 class="full-story"><a href="">Full Story</a></h3>
-				
-		<ul class="tag-list">
-			<li class="tag"><a href="">Depression</a></li>
-			<li class="tag"><a href="">Hope</a></li>
-			<li class="tag"><a href="">Addiction</a></li>
-			<li class="tag"><a href="">Healing</a></li>
-		</ul>
-		
-	</article>
-</div>
 
-<!-- ======================================================================== -->
-	
-	<article class="story centre">
-		<h1>Discovering The Truth</h1>
-		<h5>Posted on 09/06/2012 by Christopher Goodwin</h5>
-	
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		
-		<h3 class="full-story"><a href="">Full Story</a></h3>
-				
-		<ul class="tag-list">
-			<li class="tag"><a href="">Depression</a></li>
-			<li class="tag"><a href="">Hope</a></li>
-			<li class="tag"><a href="">Addiction</a></li>
-			<li class="tag"><a href="">Healing</a></li>
-		</ul>
-		
-	</article>
+<h3 id="more-stories" class="centre"><a href="">More Stories in the archive</a></h3>
 
 </div><!--content-->
 
